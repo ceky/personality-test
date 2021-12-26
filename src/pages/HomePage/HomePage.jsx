@@ -1,6 +1,3 @@
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
-
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
 
@@ -13,8 +10,6 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header />
-
       <main>
         <h1>Test: Are you an introvert or an extrovert?</h1>
         <h3>
@@ -25,8 +20,6 @@ export default function HomePage() {
           Start Test
         </button>
       </main>
-
-      <Footer />
     </div>
   );
 }

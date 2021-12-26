@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 import { getQuestions } from '../../services/questions';
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 import { saveQuestions } from '../../state/action-creators/questions';
 import Question from '../../components/question/Question';
 import './QuestionPage.css';
@@ -34,8 +32,6 @@ export default function QuestionPage() {
 
   return (
     <div>
-      <Header />
-
       <main>
         <p className="question">
           Question {currentQuestion + 1} of {questions.length}
@@ -48,8 +44,6 @@ export default function QuestionPage() {
           />
         )}
       </main>
-
-      <Footer />
     </div>
   );
 }

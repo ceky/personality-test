@@ -1,7 +1,5 @@
 import { useSelector } from 'react-redux';
 
-import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Header/Header';
 import calculateExtroversionLevel, {
   EXTROVERT,
   INTROVERT,
@@ -13,8 +11,6 @@ export default function ResultsPage() {
 
   return (
     <div>
-      <Header />
-
       <main>
         {extrovertion === EXTROVERT && (
           <div>
@@ -58,8 +54,6 @@ export default function ResultsPage() {
           </div>
         )}
       </main>
-
-      <Footer />
     </div>
   );
 }
