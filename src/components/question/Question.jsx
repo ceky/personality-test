@@ -11,6 +11,7 @@ export default function Question({ question, answers, selectAnswer }) {
     selectAnswer(answer);
     dispatch(addAnswer(answer));
   }
+
   return (
     <div data-testid="question-main" className="question-container">
       <h1>{question}</h1>
